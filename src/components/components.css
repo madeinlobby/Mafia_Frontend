@@ -1,0 +1,24 @@
+
+.flag-icon-us{
+    max-width:30px;
+    max-height:30px;
+    display: inherit;
+    float: inside;
+}
+.container{
+    position: -webkit-sticky;
+    right: -10px;
+    width: 100px;
+    height: 120px;
+
+}
+.flagButton{
+    padding-top: 4px;
+    margin: 1px ;
+    border-width: 0;
+    max-width: 60px;
+    max-height: 60px;
+}
+.flagButton:hover{
+    background: rgba(255, 0, 72, 0.6);
+}
