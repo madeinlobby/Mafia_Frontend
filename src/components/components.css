@@ -1,11 +1,12 @@
 
 .flag-icon-us{
-    max-width:30px;
+    max-width:25px;
     max-height:30px;
     display: inherit;
     float: inside;
 }
 .container{
+    float: right;
     position: -webkit-sticky;
     right: -10px;
     width: 100px;

@@ -27,10 +27,10 @@ export default function getWord(key) {
     else
         return englishDictionary[key]
 }
-export function renderComponent() {
-    return(<div className='container'>
+export class DictionaryComponent extends React.Component{
+
+    render(){return(<div className='container'>
         <button className='flagButton' onClick={()=>window.language = 'en'}><img className='flag-icon-us' src={usImage}/></button>
         <button className='flagButton' onClick={()=>window.language = 'fa'}><img className='flag-icon-us' src={faImage}/></button>
-
-    </div>)
+    </div>)}
 }

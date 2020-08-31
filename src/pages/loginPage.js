@@ -1,6 +1,7 @@
 import React from "react";
 import TextInput from "../components/input.js";
-import dictionary,{renderComponent} from "../components/dictionary";
+import './loginPage.css'
+import dictionary,{DictionaryComponent} from "../components/dictionary";
 export default class LoginPage extends React.Component{
     constructor(props) {
         super(props);
@@ -9,8 +10,8 @@ export default class LoginPage extends React.Component{
     }
     render() {
         return(<div className='loginPage'>
+            <DictionaryComponent/>
             <TextInput type='text' hint={dictionary('username')}/>
-            {renderComponent()}
         </div>)
     }
 }
