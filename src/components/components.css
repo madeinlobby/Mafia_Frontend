@@ -11,6 +11,10 @@
     right: -10px;
     width: 100px;
     height: 120px;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    justify-items: auto;
+    align-self: end;
 
 }
 .flagButton{
@@ -23,3 +27,8 @@
 .flagButton:hover{
     background: rgba(255, 0, 72, 0.6);
 }
+.inputContainer{
+    flex-direction: row;
+    flex: auto;
+}
+
