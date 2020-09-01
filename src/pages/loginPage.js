@@ -1,7 +1,7 @@
 import React from "react";
 import TextInput from "../components/input.js";
 import "./loginPage.css";
-import icon from "../assets/logo.png";
+import logo from "../assets/logo-HDPI.png";
 import dictionary, { DictionaryComponent } from "../components/dictionary";
 
 export default class LoginPage extends React.Component {
@@ -15,9 +15,6 @@ export default class LoginPage extends React.Component {
   render() {
     return (
       <div style={{ textAlign: dictionary("alignment") }} className="loginPage">
-        <header>
-          <link rel="icon" href={icon} />
-        </header>
         <DictionaryComponent
           onLangChange={this.changeLanguage}
           className="dictionary"
@@ -38,9 +35,12 @@ class Form extends React.Component {
     return (
       <div className="loginContainer">
         <div className="loginForm">
-          <div style={{ minHeight: "300px" }}></div>
-          <TextInput hint={"username"} type="text" />
-          <TextInput type="password" hint={"password"} />
+          <div style={{ minHeight: "100px" }}></div>
+          <img src={logo} style={{ maxHeight: "200px", maxWidth: "400px" }} />
+          <div className="center">
+            <TextInput hint={"username"} type="text" />
+            <TextInput type="password" hint={"password"} />
+          </div>
         </div>
       </div>
     );
