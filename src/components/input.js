@@ -20,9 +20,7 @@ export default class TextInput extends React.Component {
   render() {
     return (
       <div className="inputContainer">
-        <div style={{ textAlign: dictionary("alignment") }}>
-          {dictionary(this.state.hint)}
-        </div>
+        <div>{dictionary(this.state.hint)}</div>
         <input
           type={this.state.type}
           value={this.state.text}

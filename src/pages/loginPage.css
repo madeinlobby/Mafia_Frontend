@@ -1,6 +1,6 @@
 .loginPage {
    display: grid;
-    grid-template-columns: 100px auto auto auto;
+    grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto ;
 
 }
@@ -8,14 +8,18 @@
 
 }
 .loginForm{
-    grid-column-start: 3;
-    grid-column-end: 3;
+
     grid-row-start: 2;
     grid-row-end:5 ;
-
     display: flex;
     flex-direction: column;
 }
 .loginForm *{
     margin:0 0 5px 5px ;
+}
+.loginContainer{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
 }

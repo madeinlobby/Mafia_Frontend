@@ -13,7 +13,7 @@ export default class LoginPage extends React.Component {
 
   render() {
     return (
-      <div className="loginPage">
+      <div style={{ textAlign: dictionary("alignment") }} className="loginPage">
         <DictionaryComponent
           onLangChange={this.changeLanguage}
           className="dictionary"
@@ -32,10 +32,12 @@ export default class LoginPage extends React.Component {
 class Form extends React.Component {
   render() {
     return (
-      <div className="loginForm">
-        <div style={{ minHeight: "300px" }}></div>
-        <TextInput hint={"username"} type="text" />
-        <TextInput type="password" hint={"password"} />
+      <div className="loginContainer">
+        <div className="loginForm">
+          <div style={{ minHeight: "300px" }}></div>
+          <TextInput hint={"username"} type="text" />
+          <TextInput type="password" hint={"password"} />
+        </div>
       </div>
     );
   }

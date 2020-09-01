@@ -5,19 +5,13 @@
     display: inherit;
     float: inside;
 }
-.container{
+.flagContainer{
     float: right;
-    position: -webkit-sticky;
-    right: -10px;
-    width: 100px;
-    height: 120px;
-    grid-column-start: 4;
-    grid-column-end: 4;
     justify-items: auto;
     align-self: end;
-
 }
 .flagButton{
+    cursor: pointer;
     padding-top: 4px;
     margin: 1px ;
     border-width: 0;
@@ -25,10 +19,13 @@
     max-height: 60px;
 }
 .flagButton:hover{
+
     background: rgba(255, 0, 72, 0.6);
 }
 .inputContainer{
     flex-direction: row;
     flex: auto;
 }
-
+.flagButton:active{
+    background: rgba(255, 0, 8, 0.6);
+}

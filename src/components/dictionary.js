@@ -38,7 +38,7 @@ export class DictionaryComponent extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="flagContainer">
         <button
           className="flagButton"
           onClick={() => this.state.onLangChange("en")}
