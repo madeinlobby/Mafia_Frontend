@@ -2,6 +2,8 @@ import React from "react";
 import TextInput from "../components/input.js";
 import "./loginPage.css";
 import logo from "../assets/logo-HDPI.png";
+import pistolRight from "../assets/icons/pistolRight.png";
+import pistolLeft from "../assets/icons/pistolLeft.png";
 import dictionary, { DictionaryComponent } from "../components/dictionary";
 
 export default class LoginPage extends React.Component {
@@ -40,9 +42,10 @@ class Form extends React.Component {
           <div className="center">
             <TextInput hint={"username"} type="text" />
             <TextInput type="password" hint={"password"} />
-
             <button type="submit" className="submitButton">
-              {"Submit"}
+              <img src={pistolLeft} className="pistolImg" />
+              <text style={{ marginBottom: "2px" }}>&nbsp;Login&nbsp;</text>
+              <img src={pistolRight} className="pistolImg" />
             </button>
           </div>
         </div>
