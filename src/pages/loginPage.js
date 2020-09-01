@@ -40,6 +40,10 @@ class Form extends React.Component {
           <div className="center">
             <TextInput hint={"username"} type="text" />
             <TextInput type="password" hint={"password"} />
+
+            <button type="submit" className="submitButton">
+              {"Submit"}
+            </button>
           </div>
         </div>
       </div>

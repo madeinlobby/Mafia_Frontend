@@ -27,3 +27,12 @@
     margin-right: auto;
     margin-left: auto;
 }
+.submitButton{
+    margin-left: 27%;
+    min-height: available;
+    min-width: 100px;
+    font-family: crime_scenebold, fantasy;
+    background: rgba(205, 0, 0, 0.81);
+    border: 0;
+    border-radius: 5%;
+}
