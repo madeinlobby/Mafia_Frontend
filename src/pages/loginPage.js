@@ -1,6 +1,7 @@
 import React from "react";
 import TextInput from "../components/input.js";
 import "./loginPage.css";
+import icon from "../assets/logo.png";
 import dictionary, { DictionaryComponent } from "../components/dictionary";
 
 export default class LoginPage extends React.Component {
@@ -14,6 +15,9 @@ export default class LoginPage extends React.Component {
   render() {
     return (
       <div style={{ textAlign: dictionary("alignment") }} className="loginPage">
+        <header>
+          <link rel="icon" href={icon} />
+        </header>
         <DictionaryComponent
           onLangChange={this.changeLanguage}
           className="dictionary"
