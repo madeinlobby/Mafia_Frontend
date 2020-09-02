@@ -8,7 +8,7 @@
 
 }
 .loginForm{
-
+    margin-top: 20%;
     grid-row-start: 2;
     grid-row-end:5 ;
     display: flex;
@@ -30,9 +30,11 @@
 .submitButton{
     display: flex;
     flex-direction: row;
-    margin-left: 19%;
-    max-height: 28px;
-    min-width: 100px;
+    text-align: center;
+    text-decoration: none;
+    max-height: 25px;
+    padding-left: 28px;
+    min-width: 97%;
     font-family: crime_scenebold, fantasy;
     font-size: larger;
     background: rgba(205, 0, 0, 0.66);
@@ -41,9 +43,10 @@
     padding-bottom: 2px;
 }
 .pistolImg{
+    margin-top: 4px;
     align-self: center;
-    max-height: 23px;
-    max-width: 28px;
+    max-height: 20px;
+    max-width: 20px;
 }
 .submitButton:hover{
     font-weight: bold;

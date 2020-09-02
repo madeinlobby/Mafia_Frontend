@@ -37,16 +37,17 @@ class Form extends React.Component {
     return (
       <div className="loginContainer">
         <div className="loginForm">
-          <div style={{ minHeight: "100px" }}></div>
           <img src={logo} style={{ maxHeight: "200px", maxWidth: "400px" }} />
           <div className="center">
             <TextInput hint={"username"} type="text" />
             <TextInput type="password" hint={"password"} />
-            <button type="submit" className="submitButton">
-              <img src={pistolLeft} className="pistolImg" />
-              <text style={{ marginBottom: "2px" }}>&nbsp;Login&nbsp;</text>
-              <img src={pistolRight} className="pistolImg" />
-            </button>
+            <div>
+              <button type="submit" className="submitButton">
+                <img src={pistolLeft} className="pistolImg" />
+                <text style={{ marginBottom: "2px" }}>&nbsp;Login&nbsp;</text>
+                <img src={pistolRight} className="pistolImg" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
