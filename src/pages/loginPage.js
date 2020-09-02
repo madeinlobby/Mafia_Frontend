@@ -25,7 +25,6 @@ export default class LoginPage extends React.Component {
       </div>
     );
   }
-
   changeLanguage(lang) {
     window.language = lang;
     this.setState({ language: window.language });
